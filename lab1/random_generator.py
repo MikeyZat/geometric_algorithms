@@ -24,20 +24,13 @@ def rand_cycle_list(n, R):
     return [point_on_cycle(R, random.uniform(0, 4)) for i in range(n)]
 
 
-def rand_linear(n, point_range, v, start_point):
-    x = lambda t: start_point[0] + t * v[0]
-    y = lambda t: start_point[1] + t * v[1]
-    real_range = (point_range - start_point[0]) / v[0]
-    return [[x(rang(real_range)), y(rang(real_range))] for i in range(n)]
+def rand_linear(n, point_range, pa, pb):
+    result = []
+    for i in range(n):
+        x = rang(point_range)
+        y = (pa[1]-pb[1])/(pa[0]-pb[0])*x+(pa[1]-(pa[1]-pb[1])/(pa[0]-pb[0])*pa[0])
+        result.append([x, y])
+    return result
 
 
-n_1 = 10 ** 5
-n_2 = 1000
-range_1 = 1000
-range_2 = 10 ** 14
-R = 100
-v = [2.0, 0.1]
-start_point = [-1.0, 0.0]
-print(rand_list(5, range_2))
-print(rand_cycle_list(5, 100))
-print(rand_linear(5, range_1, v, start_point))
+print(rand_linear(5, 1000, [0.0, 0.0], [1.0, 1.0]))
