@@ -1,0 +1,6 @@
+Na zajęciach zdążyłem zrobić:
+- zad 1
+- zad 2
+- zad 3
+
+Porównanie generatorów z zad 1 i z zad3 i wizualizacja wyników
