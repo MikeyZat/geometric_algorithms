@@ -1,0 +1,4 @@
+
+- Debugowanie odczytywania odcinków narysowanych na wykresie (zakończone niepwoodzeniem)
+- Generowanie losowych odcinków (bez odcinków pionowych)
+- Zastanowienie się nad strukturą
