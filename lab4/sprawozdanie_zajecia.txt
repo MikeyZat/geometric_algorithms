@@ -1,0 +1,5 @@
+2) Algorytm sprawdzania czy wielokąt jest y-monotoniczny
+- Znajdujemy punkt o minimalnym i maksymalnym Y
+- w pętli przechodzimy po liście wierzchołków w prawą stronę zaczynając od maksymalnego wierzchołka aż dojdziemy do minimalnego wierzchołka. Jeśli po drodze gdzieś "pójdziemy w górę" (tzn. współrzędna y wierzchołka i+1 będzie większa niż i) to kończymy algorytm i wypisujemy False
+- w pętli przechodzimy po liście wierzchołków w lewą stronę zaczynając od maksymalnego wierzchołka aż dojdziemy do minimalnego wierzchołka. Jeśli po drodze gdzieś "pójdziemy w górę" (tzn. współrzędna y wierzchołka i-1 będzie większa niż i) to kończymy algorytm i wypisujemy False
+- Jeśli doszliśmy do tego momentu to znaczy, że wielokąt jest y-monotoniczny - wypisujemy True
